@@ -1,7 +1,7 @@
-# Git and GitHub for Librarians
+# Git and GitHub for Humanities
 
 ## Intro
-Hi, I'm Megan! Today we're talking about Git and GitHub for Librarians (and Archivists, and Museum folk, etc.). You can use this outline to follow along with the workshop materials, and to refer back to in the future.
+Hi, I'm Megan! Today we're talking about Git and GitHub for Humanities. You can use this outline to follow along with the workshop materials, and to refer back to in the future.
 
 Specifically, here you'll find instructions for doing some basic work with Git or GitHub. So buckle in and let's get started :)
 
@@ -20,23 +20,23 @@ Type the part of the text `that looks like this` for each command to try it out.
 #### Mac OS:
 1. Figure out what folder you're in: `pwd`
 2. Find out what's in that folder: `ls`
-3. Leave the Terminal for a moment and create a new folder on the Desktop as you normally would; call it "mmdpTest"
+3. Leave the Terminal for a moment and create a new folder on the Desktop as you normally would; call it "msudhTest"
 4. Move into that folder using Terminal:
 	* Click and drag the folder into your command line window
 	* Use the back arrow to get to the beginning of the line and type `cd`
-	* It should look like: `cd path/to/mmdpTest`
-5. Make a new folder inside that folder using the command line: `mkdir sample_folder` 
+	* It should look like: `cd path/to/msudhTest`
+5. Make a new folder inside that folder using the command line: `mkdir sample_folder`
 6. Make a new file: `touch basic_text.txt`
 
 #### Windows:
 1. Figure out what folder you're in: `echo %cd%`
 2. Find out what's in that folder: `dir`
-2. Leave the command prompt for a moment and create a new folder on the Desktop as you normally would; call it "mmdpTest"
+2. Leave the command prompt for a moment and create a new folder on the Desktop as you normally would; call it "msudhTest"
 4. Move into that folder using cmd:
 	* Change the current directory to the Desktop: `cd Desktop`
 	* See what's on your Desktop: `dir`
-	* Move into the right folder: `cd path\to\mmdpTest`
-5. Make a new folder inside that folder: `mkdir sample_folder` 
+	* Move into the right folder: `cd path\to\msudhTest`
+5. Make a new folder inside that folder: `mkdir sample_folder`
 6. Make a new file: `fsutil file createnew basic_text.txt 0`
 
 ### Git basics:
@@ -48,7 +48,7 @@ Type the part of the text `that looks like this` for each command to try it out.
 
 #### Everybody:
 1. If applicable, go back up one directory: `cd ..`
-2. Now that you're back in the folder you made on your Desktop in the last part of the instructions (mmdpTest), make it a git repository: `git init`
+2. Now that you're back in the folder you made on your Desktop in the last part of the instructions (msudhTest), make it a git repository: `git init`
 3. You should now have an (invisible) file called .git that keeps track of your git changes!
 4. To see what's happening with git and your files: `git status`
 5. To add files to what git tracks: `git add sample_folder/basic_text.txt` (*reverse the slash if you're on Windows) -- this "stages" your file(s)
@@ -56,9 +56,9 @@ Type the part of the text `that looks like this` for each command to try it out.
 
 #### Reversing a change:
 1. Updating the commit you just made (with one more change, etc.):
-	* `git commit -m "initial commit"` 
+	* `git commit -m "initial commit"`
 	* Oops -- you realize you need to add one more file, make one more change to your CSS, etc.
-	* Make changes (make a new file in the top-level folder, "mmdpTest", called forgotten_file.css)
+	* Make changes (make a new file in the top-level folder, "msudhTest", called forgotten_file.css)
 	* `git add forgotten_file.css`
 	* `git commit --amend`
 2. Un-staging a staged file (you staged a file before you realized you were done with it):
@@ -87,14 +87,14 @@ NOTE: we're not going to attempt this in the workshop
 ## GitHub
 ### Cloning a project
 1. Open a web browser window
-2. Navigate to [https://github.com/gvsulib](https://github.com/gvsulib) and click on "360Link-Reset"
+2. Navigate to [https://github.com/wludh/frenchnewspapers](https://github.com/wludh/frenchnewspapers)
 3. Find the row of buttons just above the box that displays all the filenames
-	* The first button will say "Branch: master"
-	* Look toward the right side of the row for a url in a box; it will be just to the right of a drop-down menu that says "HTTPS"
-	* Copy that url
+	* The first button, furthest left, will say "Branch: master"
+	* Look toward the right side of the row for button that says "Clone or download"
+	* Click that and a drop-down box will appear
+	* Click in the box where the URL appears and it should be highlighted -- copy that url
 4. Leave your web browser and open a command line window (or go back to the one you had open)
-5. Navigate (using `cd`) to the "mmdpTest" folder you made on your Desktop
+5. Navigate (using `cd`) to the "msudhTest" folder you made on your Desktop
 6. `git clone <pasted url>` -- you can paste the url you just copied into the command line!
 7. You should see some processing happening
-8. `ls` should show a new folder inside "mmdpTest" called "360Link-Reset"
-
+8. `ls` should show a new folder inside "msudhTest" called "frenchnewspapers"
