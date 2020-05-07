@@ -4,6 +4,6 @@ Materials and instructions for MSUDH Workshop: Git and GitHub for Humanities, Sp
 If you're able, you'll find it useful to download and install Git, and to make a GitHub account before the workshop (please see links below).
 
 ## Links
-* Git: [https://git-scm.com/](https://git-scm.com/github)
+* Git: [https://git-scm.com/](https://git-scm.com/)
 * GitHub: [https://github.com/](https://github.com/)
 * Presentation slides: [http://bit.ly/2cWhZV3](http://bit.ly/2cWhZV3)
